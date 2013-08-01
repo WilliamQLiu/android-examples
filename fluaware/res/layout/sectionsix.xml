@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_height="fill_parent" android:layout_width="fill_parent" android:scrollbars="vertical" android:background="@drawable/gradientboxdark">
+    <RelativeLayout android:layout_height="wrap_content" android:id="@+id/relativeLayout1" android:gravity="center" android:layout_width="fill_parent">
+    </RelativeLayout>
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/relativeLayout2" android:layout_alignParentTop="true">
+        <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/section3headphones" android:id="@+id/imageView1" android:layout_marginTop="5dip"></ImageView>
+        <TextView android:textSize="25dip" android:textColorHighlight="#FFFFFF" android:id="@+id/textView1" android:textStyle="bold" android:layout_height="wrap_content" android:textColor="#FFFFFF" android:layout_width="match_parent" android:layout_toRightOf="@+id/imageView1" android:layout_alignTop="@+id/imageView1" android:text="Flu Podcasts" android:layout_marginLeft="5dip"></TextView>
+        <TextView android:textSize="12dip" android:id="@+id/TextView01" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_below="@+id/textView1" android:layout_alignLeft="@+id/textView1" android:text="A customized podcast series from the CDC for all health topics related to FLU"></TextView>
+        <ListView android:listSelector="@drawable/gradientboxdark" android:cacheColorHint="#D5C6AE" android:id="@+id/android:list" android:layout_marginLeft="4dip" android:background="@drawable/podcastbackground" android:layout_height="match_parent" android:layout_width="match_parent" android:divider="@drawable/line" android:dividerHeight="3dip" android:layout_marginRight="4dip" android:layout_below="@+id/imageView1" android:layout_alignLeft="@+id/imageView1" android:layout_marginTop="5dip"></ListView>
+    </RelativeLayout>
+</RelativeLayout>

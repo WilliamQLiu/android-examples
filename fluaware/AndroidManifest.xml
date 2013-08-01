@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.wliu.cdcfluaware"
+      android:versionCode="3"
+      android:versionName="1">
+      
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application android:theme="@android:style/Theme.NoTitleBar" android:label="@string/app_name" android:icon="@drawable/section2">
+    
+    
+    	<uses-library android:name="com.google.android.maps" />
+
+       <activity android:name=".MainActivity"
+                  android:label="@string/app_name" 
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".SectionOne"
+                  android:screenOrientation="portrait"
+        		  android:label="@string/app_name">
+
+        </activity>
+                
+        <activity android:name=".SectionTwo"
+                  android:screenOrientation="portrait"
+        		  android:label="@string/app_name">
+
+        </activity>
+        
+        <activity android:name=".SectionThree"
+                  android:screenOrientation="portrait"
+                  android:label="@string/app_name">
+        
+        </activity>        
+        
+        <activity android:name=".SectionFour"
+                  android:screenOrientation="portrait"
+        		  android:label="@string/app_name">
+
+        </activity>
+        
+        <activity android:name=".SectionFive"
+                  android:screenOrientation="portrait"
+        		  android:label="@string/app_name">
+
+        </activity>
+        
+        <activity android:name=".MessageList"
+        		  android:screenOrientation="portrait"
+                  android:label="@string/app_name">
+
+        </activity>
+        
+               
+    </application>
+    <uses-sdk android:minSdkVersion="7" />
+      <supports-screens android:anyDensity="true"
+                    android:largeScreens="true"
+                    android:normalScreens="true"
+                    android:smallScreens="false" />
+
+</manifest> 
