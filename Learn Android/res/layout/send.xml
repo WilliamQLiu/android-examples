@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<TextView android:text="William is... " android:id="@+id/tvQuestion"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+	<RadioGroup android:id="@+id/rgAnswers"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+		<RadioButton android:layout_width="wrap_content"
+			android:text="Crazy" android:id="@+id/rCrazy" android:layout_height="wrap_content"></RadioButton>
+		<RadioButton android:layout_width="wrap_content"
+			android:text="Sexy" android:id="@+id/rSexy" android:layout_height="wrap_content"></RadioButton>
+		<RadioButton android:layout_width="wrap_content"
+			android:text="Both" android:id="@+id/rBoth" android:layout_height="wrap_content"></RadioButton>
+	</RadioGroup>
+	<Button android:text="Return Button" android:id="@+id/bReturn"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+
+	<TextView android:text="TextView" android:id="@+id/tvText"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+</LinearLayout>

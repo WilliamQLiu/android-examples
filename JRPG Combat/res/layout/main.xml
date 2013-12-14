@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout android:id="@+id/topMenuLinearLayout" android:background="@drawable/bluebackground" android:layout_width="fill_parent" android:layout_height="50dip">
+        <TextView android:text="Main Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/mainText"></TextView>
+    </LinearLayout>
+    <ImageView android:layout_alignLeft="@+id/linearLayout2" android:id="@+id/mainBackground" android:layout_width="fill_parent" android:src="@drawable/testbackground" android:scaleType="fitXY" android:layout_alignRight="@+id/topMenuLinearLayout" android:layout_below="@+id/topMenuLinearLayout" android:layout_height="250dip"></ImageView>
+    <LinearLayout android:id="@+id/bottomMenuLinearLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@+id/mainBackground" android:layout_alignLeft="@+id/mainBackground">
+        <RelativeLayout android:id="@+id/optionMenuLayout" android:background="@drawable/bluebackground" android:layout_width="140dip" android:layout_height="190dip">
+            <RelativeLayout android:id="@+id/option1Layout" android:layout_alignLeft="@+id/characterPortrait" android:layout_width="130dip" android:clickable="true" android:layout_below="@+id/spacingOption1" android:layout_height="40dip" android:layout_marginTop="5dip">
+                <TextView android:text="  Fight" android:id="@+id/Option1" android:layout_width="100dip" android:layout_toRightOf="@+id/option1Icon" android:layout_height="wrap_content"></TextView>
+                <ImageView android:src="@drawable/icon1" android:layout_height="25dip" android:layout_marginLeft="10dip" android:layout_width="wrap_content" android:id="@+id/option1Icon" android:layout_alignParentLeft="true"></ImageView>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/option2Layout" android:clickable="true" android:layout_width="130dip" android:layout_height="40dip" android:layout_below="@+id/option1Layout" android:layout_marginTop="5dip">
+                <ImageView android:src="@drawable/icon2" android:layout_height="25dip" android:layout_marginLeft="10dip" android:layout_width="wrap_content" android:id="@+id/option2Icon"></ImageView>
+                <TextView android:text="  Special" android:layout_toRightOf="@+id/option2Icon" android:id="@+id/Option2" android:layout_alignTop="@+id/option2Icon" android:layout_height="25dip" android:layout_width="100dip" android:layout_alignBottom="@+id/option2Icon"></TextView>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/option3Layout" android:clickable="true" android:layout_width="130dip" android:layout_height="40dip" android:layout_below="@+id/option2Layout" android:layout_marginTop="5dip">
+                <ImageView android:src="@drawable/icon3" android:layout_height="25dip" android:layout_marginLeft="10dip" android:layout_width="wrap_content" android:id="@+id/option3Icon"></ImageView>
+                <TextView android:text="  Item" android:layout_toRightOf="@+id/option3Icon" android:id="@+id/Option3" android:layout_alignTop="@+id/option3Icon" android:layout_height="25dip" android:layout_width="100dip" android:layout_alignBottom="@+id/option3Icon"></TextView>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/spacingOption4" android:layout_height="5dip" android:layout_width="wrap_content" android:layout_below="@+id/option3Layout"></RelativeLayout>
+            <RelativeLayout android:id="@+id/option4Layout" android:clickable="true" android:layout_width="130dip" android:layout_height="40dip" android:layout_below="@+id/option3Layout" android:layout_marginTop="5dip">
+                <ImageView android:src="@drawable/icon4" android:layout_height="25dip" android:layout_marginLeft="10dip" android:layout_width="wrap_content" android:id="@+id/option4Icon"></ImageView>
+                <TextView android:text="  Run" android:layout_toRightOf="@+id/option4Icon" android:id="@+id/Option4" android:layout_alignTop="@+id/option4Icon" android:layout_height="25dip" android:layout_width="100dip" android:layout_alignBottom="@+id/option4Icon"></TextView>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/playerMenuLayout" android:background="@drawable/bluebackground" android:layout_width="fill_parent" android:layout_height="190dip">
+            <RelativeLayout android:layout_width="wrap_content" android:id="@+id/player2Layout" android:layout_below="@+id/player1Layout" android:layout_height="40dip" android:layout_marginTop="5dip">
+                <TextView android:text="Name 2" android:id="@+id/Player2Name" android:padding="2dip" android:layout_width="70dip" android:paddingLeft="10dip" android:layout_height="wrap_content"></TextView>
+                <TextView android:text="9999" android:id="@+id/Player2CurHP" android:padding="2dip" android:layout_width="wrap_content" android:paddingRight="1dip" android:paddingLeft="7dip" android:layout_height="wrap_content" android:layout_toRightOf="@+id/Player2Name" android:layout_alignTop="@+id/Player2Name"></TextView>
+                <TextView android:text="/" android:id="@+id/Player2HPSign" android:padding="2dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/Player2CurHP" android:layout_alignTop="@+id/Player2CurHP"></TextView>
+                <TextView android:text="9999" android:id="@+id/Player2MaxHP" android:padding="2dip" android:layout_width="wrap_content" android:paddingRight="7dip" android:paddingLeft="1dip" android:layout_height="wrap_content" android:layout_toRightOf="@+id/Player2HPSign" android:layout_alignTop="@+id/Player2HPSign"></TextView>
+                <ProgressBar android:paddingBottom="3dip" android:paddingRight="10dip" style="@android:style/Widget.ProgressBar.Horizontal" android:id="@+id/Player2ProgressBar" android:paddingLeft="10dip" android:layout_width="150dip" android:layout_height="13dip" android:layout_below="@+id/Player2Name"></ProgressBar>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:id="@+id/player3Layout" android:layout_below="@+id/player2Layout" android:layout_height="40dip" android:layout_marginTop="5dip">
+                <TextView android:text="Name 3" android:id="@+id/Player3Name" android:padding="2dip" android:layout_width="70dip" android:paddingLeft="10dip" android:layout_height="wrap_content"></TextView>
+                <ProgressBar android:paddingBottom="3dip" android:paddingRight="10dip" style="@android:style/Widget.ProgressBar.Horizontal" android:id="@+id/Player3ProgressBar" android:paddingLeft="10dip" android:layout_width="150dip" android:layout_height="13dip" android:layout_below="@+id/Player3Name"></ProgressBar>
+                <TextView android:text="9999" android:id="@+id/Player3CurHP" android:padding="2dip" android:layout_width="wrap_content" android:paddingRight="1dip" android:paddingLeft="7dip" android:layout_height="wrap_content" android:layout_toRightOf="@+id/Player3Name"></TextView>
+                <TextView android:text="/" android:id="@+id/Player3HPSign" android:padding="2dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/Player3CurHP" android:layout_alignTop="@+id/Player3CurHP"></TextView>
+                <TextView android:text="9999" android:id="@+id/Player3MaxHP" android:padding="2dip" android:layout_width="wrap_content" android:paddingRight="7dip" android:paddingLeft="1dip" android:layout_height="wrap_content" android:layout_toRightOf="@+id/Player3HPSign" android:layout_alignTop="@+id/Player3HPSign"></TextView>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:id="@+id/player4Layout" android:layout_below="@+id/player3Layout" android:layout_height="40dip" android:layout_marginTop="5dip">
+                <TextView android:text="Name 4" android:id="@+id/Player4Name" android:padding="2dip" android:layout_width="70dip" android:paddingLeft="10dip" android:layout_height="wrap_content"></TextView>
+                <TextView android:text="9999" android:id="@+id/Player4CurHP" android:padding="2dip" android:layout_width="wrap_content" android:paddingRight="1dip" android:paddingLeft="7dip" android:layout_height="wrap_content" android:layout_toRightOf="@+id/Player4Name" android:layout_alignTop="@+id/Player4Name"></TextView>
+                <TextView android:text="/" android:id="@+id/Player4HPSign" android:padding="2dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/Player4CurHP" android:layout_alignTop="@+id/Player4CurHP"></TextView>
+                <TextView android:text="9999" android:id="@+id/Player4MaxHP" android:padding="2dip" android:layout_width="wrap_content" android:paddingRight="7dip" android:paddingLeft="1dip" android:layout_height="wrap_content" android:layout_toRightOf="@+id/Player4HPSign" android:layout_alignTop="@+id/Player4HPSign"></TextView>
+                <ProgressBar android:paddingBottom="3dip" android:paddingRight="10dip" style="@android:style/Widget.ProgressBar.Horizontal" android:id="@+id/Player4ProgressBar" android:paddingLeft="10dip" android:layout_width="150dip" android:layout_height="13dip" android:layout_below="@+id/Player4Name"></ProgressBar>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/player1Layout" android:layout_width="wrap_content" android:layout_marginTop="5dip" android:layout_height="40dip">
+                <TextView android:text="Name 1" android:id="@+id/Player1Name" android:padding="2dip" android:layout_width="70dip" android:paddingLeft="10dip" android:layout_height="wrap_content"></TextView>
+                <ProgressBar android:paddingBottom="3dip" android:paddingRight="10dip" style="@android:style/Widget.ProgressBar.Horizontal" android:id="@+id/Player1ProgressBar" android:paddingLeft="10dip" android:layout_width="150dip" android:layout_height="13dip" android:layout_below="@+id/Player1Name" android:layout_alignLeft="@+id/Player1Name"></ProgressBar>
+                <TextView android:text="9999" android:id="@+id/Player1CurHP" android:padding="2dip" android:layout_width="wrap_content" android:paddingRight="1dip" android:paddingLeft="7dip" android:layout_height="wrap_content" android:layout_toRightOf="@+id/Player1Name" android:layout_alignTop="@+id/Player1Name"></TextView>
+                <TextView android:text="/" android:id="@+id/Player1HPSign" android:padding="2dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/Player1CurHP" android:layout_alignTop="@+id/Player1CurHP"></TextView>
+                <TextView android:text="9999" android:id="@+id/Player1MaxHP" android:padding="2dip" android:layout_width="wrap_content" android:paddingRight="7dip" android:paddingLeft="1dip" android:layout_height="wrap_content" android:layout_toRightOf="@+id/Player1HPSign" android:layout_alignTop="@+id/Player1HPSign"></TextView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/player1" android:layout_marginTop="150dip" android:layout_marginLeft="220dip" android:background="@drawable/player1"></ImageView>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/enemy1" android:layout_marginLeft="25dip" android:background="@drawable/enemydragon" android:layout_marginTop="120dip"></ImageView>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/player2" android:background="@drawable/player2" android:layout_marginLeft="220dip" android:layout_marginTop="185dip"></ImageView>
+</RelativeLayout>

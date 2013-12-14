@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" id="selected" android:oneshot="false">
+
+  <item android:drawable="@drawable/player1fightframe1" android:duration="70"/>
+  <item android:drawable="@drawable/player1fightframe2" android:duration="70"/>
+  <item android:drawable="@drawable/player1fightframe3" android:duration="70"/>
+  <item android:drawable="@drawable/player1fightframe4" android:duration="70"/>
+  <item android:drawable="@drawable/player1" android:duration="50"/>
+
+</animation-list>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.williamqliu.learnandroid" android:versionCode="1"
+	android:versionName="1.0">
+	<uses-sdk android:minSdkVersion="8" />
+	<uses-permission android:name="android.permission.SET_WALLPAPER"></uses-permission>
+
+	<application android:icon="@drawable/icon" android:label="Will Learn Android">
+		<activity android:name=".Splash" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".MainActivity" android:label="Main Activity">
+			<intent-filter>
+				<action android:name="com.williamqliu.learnandroid.MAINACTIVITY" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".AboutUs" android:label="About Us"
+			android:theme="@android:style/Theme.Dialog">
+			<intent-filter>
+				<action android:name="com.williamqliu.learnandroid.ABOUTUS" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".Menu" android:label="Main Menu">
+			<intent-filter>
+				<action android:name="com.williamqliu.learnandroid.MENU" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".Prefs" android:label="Preferences">
+			<intent-filter>
+				<action android:name="com.williamqliu.learnandroid.PREFS" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".TextPlay" android:label="Playing with Text">
+		</activity>
+
+		<activity android:name=".Email" android:label="Email Application">
+		</activity>
+
+		<activity android:name=".Camera" android:label="Camera Application"
+			android:screenOrientation="portrait">
+		</activity>
+
+		<activity android:name=".Data" android:label="Data Application">
+		</activity>
+
+		<activity android:name=".OpenedClass" android:label="Opened Class Application">
+		</activity>
+
+
+	</application>
+</manifest>

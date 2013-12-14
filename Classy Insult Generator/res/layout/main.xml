@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:screenOrientation="portrait" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:weightSum=".5" android:background="@drawable/background">
+
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="Step 1: Select Insult"
+		android:id="@+id/tvStep1" android:textSize="20dp" />
+	<EditText android:layout_width="200dp" android:id="@+id/atContactName"
+		android:inputType="textPersonName" android:layout_below="@+id/tvStep2"
+		android:layout_alignParentLeft="true" android:layout_height="40dp"></EditText>
+	<TextView android:layout_width="wrap_content" android:text="Step 3: Send Text Message"
+		android:layout_height="wrap_content" android:id="@+id/tvStep3"
+		android:layout_below="@+id/atContactName"
+		android:layout_alignParentLeft="true" android:layout_marginTop="40dp"
+		android:textSize="20dp"></TextView>
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="75dp" android:id="@+id/tvInsultList"
+		android:layout_below="@+id/tvStep1" android:layout_alignParentLeft="true"
+		android:layout_marginTop="20dp" android:paddingLeft="10dp"
+		android:paddingRight="10dp"></TextView>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/tvStep2"
+		android:layout_below="@+id/btPrevious" android:layout_alignParentLeft="true"
+		android:layout_marginTop="40dp" android:textSize="20dp"
+		android:text="Step 2: Enter Phone Number"></TextView>
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/btSend"
+		android:layout_below="@+id/tvStep3" android:layout_alignParentLeft="true"
+		android:layout_marginTop="20dp" android:text="Send Insult!"></Button>
+	<Button android:text="Previous" android:paddingLeft="10dp"
+		android:layout_height="wrap_content" android:paddingRight="10dp"
+		android:id="@+id/btPrevious" android:layout_below="@+id/tvInsultList"
+		android:layout_width="100dp"></Button>
+	<Button android:text="Next" android:paddingLeft="10dp"
+		android:layout_height="wrap_content" android:paddingRight="10dp"
+		android:layout_width="100dp" android:id="@+id/btNext"
+		android:layout_above="@+id/tvStep2" android:layout_toRightOf="@+id/btPrevious"
+		android:layout_marginLeft="50dp"></Button>
+	<Button android:text="Browse" android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:id="@+id/btBrowse"
+		android:layout_above="@+id/tvStep3" android:layout_toRightOf="@+id/atContactName"
+		android:layout_below="@+id/tvStep2"></Button>
+</RelativeLayout>
+    
