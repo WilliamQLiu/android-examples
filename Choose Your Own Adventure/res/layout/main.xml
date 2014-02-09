@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+	android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:background="#FFFFFF">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:background="@drawable/image_titlebar" >
+
+            <TextView
+                android:id="@+id/tvStat1Num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Test"
+                android:textColor="#656F56"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tvStat2Num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tvStat1Num"
+                android:text="Test"
+                android:textColor="#656F56"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tvStat3Num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tvStat2Num"
+                android:text="Test"
+                android:textColor="#656F56"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/imageButtonPages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:background="#FFFFFF"
+                android:paddingRight="10dp"
+                android:src="@drawable/image_pagesicon" />
+
+            <TextView
+                android:id="@+id/tvAppName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:includeFontPadding="false"
+                android:padding="5dp"
+                android:text="No Context Robot"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvStoryboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/tvAppName"
+                android:includeFontPadding="false"
+                android:padding="5dp"
+                android:text="Page "
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/mainImage"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:src="@drawable/ic_launcher"
+            android:visibility="gone"
+             />
+
+        <TextView
+            android:id="@+id/tv_story1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="#000000"
+            android:textSize="16sp" android:layout_marginLeft="7dp" android:layout_marginRight="7dp"/>
+
+        <TextView
+            android:id="@+id/tv_story2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="#000000"
+            android:textSize="16sp" android:layout_marginLeft="7dp" android:layout_marginRight="7dp"/>
+
+        <TextView
+            android:id="@+id/tv_story3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="#000000"
+            android:textSize="16sp" android:layout_marginLeft="7dp" android:layout_marginRight="7dp"/>
+
+        <RadioGroup
+            android:id="@+id/rg_answers"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|left" >
+
+            <ImageView
+                android:id="@+id/imageTitleBar2"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#000000" />
+
+            <RadioButton
+                android:id="@+id/r_answer1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:layout_marginRight="7dp"
+                android:checked="false"
+                android:gravity="top|left|fill_vertical"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:saveEnabled="false"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/r_answer2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left|fill_horizontal"
+                android:checked="false"
+                android:gravity="top|left|fill_vertical"
+                android:paddingBottom="5dp"
+                android:saveEnabled="false"
+                android:textColor="#000000"
+                android:textSize="16sp" android:layout_marginRight="7dp"/>
+
+            <RadioButton
+                android:id="@+id/r_answer3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:gravity="top|left|fill_vertical"
+                android:paddingBottom="5dp"
+                android:saveEnabled="false"
+                android:textColor="#000000"
+                android:textSize="16sp" android:layout_marginRight="7dp"/>
+
+            <RadioButton
+                android:id="@+id/r_answer4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:gravity="top|left|fill_vertical"
+                android:paddingBottom="5dp"
+                android:saveEnabled="false"
+                android:textColor="#000000"
+                android:textSize="16sp" android:layout_marginRight="7dp"/>
+
+            <RadioButton
+                android:id="@+id/r_answer5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:gravity="top|left|fill_vertical"
+                android:padding="10dp"
+                android:saveEnabled="false"
+                android:textColor="#000000"
+                android:textSize="16sp" android:layout_marginRight="7dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/b_Next"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button"
+            android:padding="10dp"
+            android:text="@string/ButtonNext"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="fill_parent"
+            android:layout_height="10dp" />
+    </LinearLayout>
+
+</ScrollView>
