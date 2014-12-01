@@ -1,21 +1,17 @@
 package williamqliu.com.happilyeverafter;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
-import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.ScrollView;
 import android.widget.TextView;
+
 
 
 //public class MainActivity extends Activity implements OnClickListener {
@@ -32,19 +28,15 @@ public class MainActivity extends Activity implements View.OnClickListener{
 	public static Button b_Next;
 	public static int storyline;
 	public static int setupStory1, setupStory2, setupStory3;
-	public static int setupAnswer1, setupAnswer2, setupAnswer3, setupAnswer4, setupAnswer5, setupAnswer6;
+	public static int setupAnswer1, setupAnswer2, setupAnswer3, setupAnswer4, setupAnswer5;
 	public static boolean changedStatFlag;
 	public static int r_checked, choice1, choice2, choice3, choice4, choice5;
-	public static ChapterOne myChapterOne = new ChapterOne(); // Setup Chapter One
-	public static Storyboard myStoryboard = new Storyboard(); // Setup Storyboard
+	public static ChapterOne myChapterOne = new ChapterOne(); // Setup Chapter
+																// One
+	public static Storyboard myStoryboard = new Storyboard(); // Setup
+																// Storyboard
 	public static Hero myHero = new Hero(); // Setup Player stats
 	//public static Toast myToast;
-	
-	public static ImageButton statsPage;
-	public static ImageView mainImage;
-	public static AnimationDrawable frameAnimation;
-	public static ScrollView myScrollView;
-	
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -79,14 +71,14 @@ public class MainActivity extends Activity implements View.OnClickListener{
 		rg_answers = (RadioGroup) findViewById(R.id.rg_answers);
 		rg_answers.setOnClickListener(this);
 		
-		statsPage = (ImageButton) findViewById(R.id.imageButtonPages);
-		statsPage.setOnClickListener(this);
+
 		
 		b_Next = (Button) findViewById(R.id.b_Next);
 		b_Next.setOnClickListener(this);
 		tv_stat1 = (TextView) findViewById(R.id.tvStat1Num);
 		tv_stat2 = (TextView) findViewById(R.id.tvStat2Num);
 		tv_stat3 = (TextView) findViewById(R.id.tvStat3Num);
+		
 		
 		//Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "fonts/CharlemagneBold.otf");
 		//Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "fonts/final_fantasy_36_font.ttf");
@@ -110,14 +102,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
 		tv_stat2.setTypeface(myTypeFace);	
 		tv_stat3.setTypeface(myTypeFace);
 		
-		myScrollView = (ScrollView) findViewById(R.id.scrollView);
-		
-
-		// Setup Images
-		mainImage = (ImageView) findViewById(R.id.mainImage);
-		mainImage.setAlpha(0);	// Make image transparent
-		frameAnimation = (AnimationDrawable) mainImage.getBackground();
-
+			
 
 	}
 	
@@ -133,20 +118,6 @@ public class MainActivity extends Activity implements View.OnClickListener{
 			myStoryboard.storyIncrement();
 			break;
 		}
-		
-		case R.id.imageButtonPages:{
-			//Intent myIntent = new Intent(MainActivity.this, StatsPage.class);
-			//MainActivity.this.startActivity(myIntent);
-			
-			Intent myIntent = new Intent(v.getContext(), StatsPage.class);
-            startActivityForResult(myIntent, 0);
-			
-            // Play Activity for Animation
-            //Intent myIntent = new Intent(v.getContext(), AnimationActivity.class);
-            //startActivityForResult(myIntent, 0);
-			
-		}
-		
 		}
 	}
 
@@ -200,9 +171,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
 			settings.getInt("setupAnswer3Key", MainActivity.setupAnswer3);
 			settings.getInt("setupAnswer4Key", MainActivity.setupAnswer4);
 			settings.getInt("setupAnswer5Key", MainActivity.setupAnswer5);
-			settings.getInt("setupAnswer6Key", MainActivity.setupAnswer6);
-
-			Storyboard.setupAnswerChoices(setupAnswer1, setupAnswer2, setupAnswer3, setupAnswer4, setupAnswer5, setupAnswer6);
+			Storyboard.setupAnswerChoices(setupAnswer1, setupAnswer2, setupAnswer3, setupAnswer4, setupAnswer5);
 
 			MainActivity.r_checked = settings.getInt("lastCheckedKey", -1);
 			
@@ -275,7 +244,6 @@ public class MainActivity extends Activity implements View.OnClickListener{
 		editor.putInt("setupAnswer3Key", MainActivity.setupAnswer3);
 		editor.putInt("setupAnswer4Key", MainActivity.setupAnswer4);
 		editor.putInt("setupAnswer5Key", MainActivity.setupAnswer5);
-		editor.putInt("setupAnswer6Key", MainActivity.setupAnswer6);
 		
 		editor.commit();
 
@@ -301,5 +269,9 @@ public class MainActivity extends Activity implements View.OnClickListener{
 		return true;
 
 	}
+
+
+
+
 
 }

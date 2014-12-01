@@ -6,17 +6,14 @@ public class Hero{
 
 	//public int stats[] = { 100, 100, 100, 100 }; 
 	public static int stat1, stat2, stat3, stat4;
-	public static String heroName = "Unnamed Robot";
 	
 	// Create a constructor to initialize variables
 	public static void initializeStats() 
 	{
-		Hero.heroName = "Unnamed Robot";
 		Hero.stat1 = 100;  // Stat1
 		Hero.stat2 = 100;  // Stat2
 		Hero.stat3 = 100;  // Stat3
 		Hero.stat4 = 100;  // Stat4
-
 		statsChange(0,0,0,0);  // Set Text to display
 	}
 	
@@ -27,9 +24,9 @@ public class Hero{
 		Hero.stat3 += temp_stat3;
 		Hero.stat4 += temp_stat4;
 		
-		//MainActivity.tv_stat1.setText(("Hero (Lawful)  ").toString());
-		//MainActivity.tv_stat2.setText(("Strength " + Hero.stat2 + "  ").toString());
-		//MainActivity.tv_stat3.setText(("Dexterity " + Hero.stat3  + "  ").toString());
+		MainActivity.tv_stat1.setText(("Hero (Lawful)  ").toString());
+		MainActivity.tv_stat2.setText(("Strength " + Hero.stat2 + "  ").toString());
+		MainActivity.tv_stat3.setText(("Dexterity " + Hero.stat3  + "  ").toString());
 		//MainActivity.tv_stat3.setText(("Alignment " + Hero.stat3  + "  ").toString());
 		
 		//MainActivity.tv_stat4.setText((" " + MainActivity.storyline).toString());

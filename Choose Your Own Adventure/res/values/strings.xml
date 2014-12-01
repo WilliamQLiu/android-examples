@@ -1,70 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">"No Context Robot"</string>
-    <string name="ButtonBack">&quot;BACK&quot;</string>
-    <string name="ButtonNext">"NEXT"</string>
-    <string name="Scene1story1">&quot;Mankind is destructive. Despite the advances in science to cure diseases and live in endless abundance, humans inherently cannot accept a Utopia. Instead, they inevitably revert back to their own undoing. The last war, simply known as \'The End\', destroyed all organic matter.&quot;</string>
-    <string name="Scene1story2">&quot;However, humans were not without their moments of brilliance. For example, they built you, their most advanced robot yet, the \'Autonomous Super Savior\' with the ability to \'Space Hop In Time\'. You are mankind\’s last hope... ummm... what is your name?&quot; </string>
-    <string name="Scene1story3">&quot;&quot;</string>
-    <string name="Scene1choiceA">&quot;Clockwork&quot;</string>
-    <string name="Scene1choiceB">&quot;Hal&quot;</string>
-    <string name="Scene1choiceC">&quot;Dex&quot;</string>
-    <string name="Scene1choiceD">&quot;I am fully autonomous. I choose my own name!&quot;</string>
-    <string name="Scene2story1">&quot; &quot;</string>
-    <string name="Scene2story2">&quot;You\’ve been designed to teleport back in time to key events that will shape humanity’s future.  With the push of a button, you will warp through the space time continuum to an exact time and location that holds great potential for historical significance.  However, before you were fully completed, war wiped away your creators.  The missing piece in your programming is the contextual background of why you were teleported back and what you should do.&quot;</string>
-    <string name="Scene2story3">&quot;Instead you must rely on your Autonomous Super Savior circuitry to decide the best course of action.  Will you use your binary logical reasoning or trust your emoticons?  Will you decide to be a pacifist or will you regularly fire your lasers of doom?  Got it?  Good!  Here we gooo!  Beep beep boop poop boop wheee!&quot;</string>
-    <string name="Scene2Bstory1">&quot;Life began in a small town, but society never quite made sense. People seemed to be in a constant state of urgency for rather dull affairs. Instead, you found comfort in nature.&quot;</string>
-    <string name="Scene2Bstory2">&quot;As soon as you were able, you picked up a bow and a quiver of arrows before leaving for the Unending Forest. Your marksmen skills are known across the kingdom.&quot;</string>
-    <string name="Scene2Bstory3">&quot; &quot;</string>
-    <string name="Scene2Cstory1">&quot;Scenes of life are hazy at best. Any attempts to recollect memories are rewarded with a splitting headache.&quot;</string>
-    <string name="Scene2Cstory2">&quot;Events seem to overlap and uncertainty clouds your thoughts. One image paints an older, weary looking version of you laying in a pool of blood.&quot;</string>
-    <string name="Scene2Cstory3">&quot;As you try to piece together memories, you wonder if the image is a father you never knew.&quot;</string>
-    <string name="Scene2AchoiceA">&quot; &quot;</string>
-    <string name="Scene2AchoiceB">&quot; &quot;</string>
-    <string name="Scene2AchoiceC">"Answer Choice AB Answer 3"</string>
-    <string name="Scene2AchoiceD">"Answer Choice AB Answer 4"</string>
-    <string name="Scene2BchoiceA">&quot; &quot;</string>
-    <string name="Scene2BchoiceB">&quot; &quot;</string>
-    <string name="Scene2BchoiceC">&quot; &quot;</string>
-    <string name="Scene2BchoiceD">&quot; &quot;</string>
-    <string name="Scene3story1">&quot;Early tests of time travel proved to be rather problematic for living entities.  Lab rats and monkeys all shared the common characteristics of violently exploding upon reformation at the destination.  Contrary to the beliefs of humanity’s top scientists, bubble wrap and styrofoam was not enough to ensure safe transportation.&quot;</string>
-    <string name="Scene3story2">&quot;Unlike your tissued counterpart, this is of no concern because you were built with a reinforced titanium shell.  If you had the capacity to worry, then things like fuel levels, the occasional fried circuit, and failing your mission would be your greatest concerns.&quot;</string>
-    <string name="Scene3story3">&quot;Speaking of the mission, you blink into existence some 200 million years into the past and find yourself surrounded in a lush rainforest.  What do you do now?&quot;</string>
-    <string name="Scene3choiceA">&quot;Do a self systems diagnostics check&quot;</string>
-    <string name="Scene3choiceB">&quot;No time to lose, I hurry to my destination&quot;</string>
-    <string name="Scene3choiceC">&quot;I need to find a new fuel source&quot;</string>
-    <string name="Scene3choiceD">&quot; &quot;</string>
-    <string name="Scene4Astory1">&quot;Great idea! Traveling across time may have caused parts to move around inadvertently. While your system diagnostics are running, you look through your arsenal of weaponry. Lasers of Doom, check. Mechanical Killer Buzzsaw, check.&quot;</string>
-    <string name="Scene4Astory2">&quot;Beep Beep Boop Beep. The pattern of sounds indicates that all is well, although you are slightly low on fuel. Surprisingly, the most complex algorithms for time travel still has trouble adjusting for daylight savings and different time zones.&quot;</string>
-    <string name="Scene4Astory3">&quot;You arrived an hour early. What do you do now?&quot;</string>
-    <string name="Scene4AchoiceA">&quot;No time to lose, I hurry to my destination&quot;</string>
-    <string name="Scene4AchoiceB">&quot;I need to find a new fuel source&quot;</string>
-    <string name="Scene4AchoiceC">&quot; &quot;</string>
-    <string name="Scene4AchoiceD">&quot; &quot;</string>
-    <string name="Scene4Bstory1">&quot;You are about to affect the first event that will influence the fate of humanity.  No pressure.&quot;</string>
-    <string name="Scene4Bstory2">&quot;In movies and literature, time travel is depicted as a fragile thing.  In reality, it\’s really quite the opposite.  You see, most lives are uneventful.  Living creatures fall into a daily routine with minor deviations.  As a whole, the world wouldn’t notice whether these \’lives\’ existed or not. Instead, only certain creatures make a dramatic impact on the world and often it\’s by sheer coincidence.  You wonder how this event will shape the world.&quot;</string>
-    <string name="Scene4Bstory3">&quot;You reach your destination and attempt to find the target.  Upon closer examination, you see a butterfly struggling to emerge out of its cocoon.  Unsure of the relevance, you decide to...&quot;</string>
-    <string name="Scene4BchoiceA">&quot;Help the butterfly emerge&quot;</string>
-    <string name="Scene4BchoiceB">&quot;Leave the butterfly alone&quot;</string>
-    <string name="Scene4BchoiceC">&quot;Crush the butterfly with my cold robotic hands&quot;</string>    
-    <string name="Scene4Cstory1">&quot;The \‘Low Fuel\’ warning beeps, catching your undivided attention.  Time travel is exhausting and you need to refuel or risk the chance of powering down.&quot;</string>
-    <string name="Scene4Cstory2">&quot;While you are unable to renew your plutonium power source, you do have the ability to mimic the creation of fossil fuels.  Usually the process is natural and requires the decomposition of buried dead organisms for millions of years.  Since you are the pinnacle of human technology, you simply crush creatures into the complex machine sitting inside your stomach, which then applies pressure, heat, and reorganizes the matter until it becomes robo-grade usable.&quot;</string>
-    <string name="Scene4Cstory3">&quot;Whether by coincidence or a brilliantly planned time warp, you find the perfect specimen walking by, the humblest of God’s creatures, the Tyrannosaurus Rex.&quot;</string>
-    <string name="Scene4CchoiceA">&quot;Devour the T-Rex for breakfast&quot;</string>
-    <string name="Scene4CchoiceB">&quot;Leave the T-Rex alone&quot;</string>
-    <string name="Scene4CchoiceC" />
+    <string name="app_name">"Happily Ever After"</string>
+    <string name="Button">"NEXT"</string>
+    <string name="AA_story1">&quot;Time Out.&quot;</string>
+    <string name="AA_story2">&quot;There are certain moments when you should rethink some of life’s decisions.  Maybe you should have kissed that pretty girl when you had a chance.  Or maybe you shouldn’t have volunteered to be the town’s hero.&quot;</string>
+    <string name="AA_story3">&quot;As you head toward the Dragon’s lair, you can’t shake the feeling that you might not survive this day.  You think back on your previous accomplishments and remember...&quot;</string>
+    <string name="AA_choice1">&quot;You squired for the legendary Sir William the Brave learning the ways of chivalry and how to fight with sword and shield.  Unfortunately, your mentor ended up as Sir William the Breakfast to our local Dragon.&quot;</string>
+    <string name="AA_choice2">&quot;You came from little material means, becoming adept at hunting with bow and arrows out of necessity.  You’re surprisingly resourceful, but I wouldn’t say too bright.  After all, you're about to start a fight with a dragon.&quot;</string>
+    <string name="AA_choice3">&quot;I don't care.&quot;</string>
+    <string name="AB_storyA1">&quot;Hello Knight in shining armor.&quot;</string>
+    <string name="AB_storyA2">&quot;You’re the Hero of this story.  You know in your heart that you’re destined for greatness; dragon slaying is going to be only one of many accomplishments.  Some would say it was your trust fund that afforded you to train to heroic strength.  They're just jealous.&quot;</string>
+    <string name="AB_storyA3">&quot;Due to your natural skill and talents, you get the following stats:
++50 Strength – Rawrr!  You're so strong you can punch a hole through someone’s chest!&quot;</string>
+    <string name="AB_choiceA1">"Answer Choice AB Answer 1"</string>
+    <string name="AB_choiceA2">"Answer Choice AB Answer 2"</string>
+    <string name="AB_choiceA3">"Answer Choice AB Answer 3"</string>
+    <string name="AB_choiceA4">"Answer Choice AB Answer 4"</string>
+    <string name="AC_story1">"Story AC Text 1"</string>
+    <string name="AC_story2">"Story AC Text 2"</string>
+    <string name="AC_story3">"Story AC Text 3"</string>
+    <string name="AC_choice1">"Answer Choice AC Answer 1"</string>
+    <string name="AC_choice2">"Answer Choice AC Answer 2"</string>
+    <string name="AC_choice3">"Answer Choice AC Answer 3"</string>
+    <string name="AC_choice4">"Answer Choice AC Answer 4"</string>
+    <string name="AD_story1">"Story AD Text 1"</string>
+    <string name="AD_story2">"Story AD Text 2"</string>
+    <string name="AD_story3">"Story AD Text 3"</string>
+    <string name="AD_choice1">"Answer Choice AD Answer 1"</string>
+    <string name="AD_choice2">"Answer Choice AD Answer 2"</string>
+    <string name="AD_choice3">"Answer Choice AD Answer 3"</string>
+    <string name="AD_choice4">"Answer Choice AD Answer 4"</string>
+    <string name="AB_choiceB1">&quot; &quot;</string>
+    <string name="AB_choiceB2">&quot; &quot;</string>
+    <string name="AB_choiceB3">&quot; &quot;</string>
+    <string name="AB_storyB1">&quot;Aha!  So you’ve decided to be a Robin Hood hero (though not exactly him because that would be copyright infringement).&quot;</string>
+    <string name="AB_storyB2">&quot;Anyways, you’re the Hero of this story. You know better than to engage your enemies in close quarters, especially a Dragon that can take flight at a moment’s notice.&quot;</string>
+    <string name="AB_storyB3">&quot;You are stealthy and deadly.  For this, you get the following stats:
++50 Dexterity – You make cats look clumsy.  You can shoot an apple off a person’s head from 500 yards away… most of the time.&quot;</string>
+    <string name="AB_storyC1">&quot;Of course you don’t care.  This is a text based choose your own adventure game.  Why would you bother reading through all the answer choices to form a decision?&quot;</string>
+    <string name="AB_storyC2">&quot;To be fair, maybe you did read the choices and there just wasn’t anything that caught your eye.  I probably shouldn’t jump to conclusions about people (or at least that’s what my therapist tells me).  No matter!&quot;</string>
+    <string name="AB_storyC3">&quot;Here’s some random stats and a random skill.  If anyone asks where you’re from, just mumble and nod.&quot;</string>
     
-     <string name="Scene5story1">&quot;Test &quot;</string>
-    <string name="Scene5story2">&quot;Test &quot; </string>
-    <string name="Scene5story3">&quot;Test &quot;</string>
-    <string name="Scene5choiceA">&quot;Test &quot;</string>
-    <string name="Scene5choiceB">&quot;Test &quot;</string>
-    <string name="Scene5choiceC">&quot;Test &quot;</string>
-    
-    
-    <string name="hello_world">Hello world!</string>
-    <string name="menu_settings">Settings</string>
-    <string name="title_activity_animation">AnimationActivity</string>
-
 </resources>
